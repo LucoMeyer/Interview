@@ -1,0 +1,77 @@
+<!-- Top Panel -->
+<div class="top-panel">
+  <h1>Presentation</h1>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+
+        <!-- Reports Button -->
+        <li class="nav-item">
+          <button class="nav-link btn btn-link" routerLink="/page">
+            <i class="fa-solid fa-person-rays fa-bounce"></i> About Me
+          </button>
+        </li>
+
+        <!-- Settings Button -->
+        <li class="nav-item">
+          <button class="nav-link btn btn-link" routerLink="/Help">
+            <i class="fa-sharp fa-solid fa-house fa-beat"></i> Home
+          </button>
+        </li>
+
+        <!-- Help Button -->
+        <li class="nav-item">
+          <button class="nav-link btn btn-link" routerLink="/tech">
+            <i class="fa-solid fa-microchip fa-shake"></i> About Tech
+          </button>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Content Section -->
+<section class="content-section">
+  <div class="container">
+    <div class="text-center">
+      <h2>Luco Meyer</h2>
+      <p>Functional Interview</p>
+      
+    </div>
+    <div class="image-wrapper">
+      <img src="\assets\EPI-USE_Logo.jpg" alt="Picture">
+    </div>
+  </div>
+</section>
+
+<!-- Help video Modal -->
+<ng-template #videoModal let-modal modal-fade autofocus="false">
+  <div class="modal-header">
+    <h4 class="modal-title">Help Video</h4>
+  </div>
+  <div class="modal-body" autofocus="false">
+    <video width="100%" controls>
+      <source src="/assets/Test4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <button autofocus="false" type="button" class="modal-button" (click)="modal.close('Close click')">Close</button>
+  </div>
+  <div class="modal-footer"></div>
+</ng-template>
+
+<router-outlet></router-outlet>
+
+<!-- Bottom Panel -->
+<div class="bottom-panel">
+  
+</div>
